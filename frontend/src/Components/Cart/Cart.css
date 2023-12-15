@@ -1,0 +1,222 @@
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .emptyCart > svg {
+    font-size: 15vmax;
+    color: rgb(41, 41, 41);
+  }
+  .emptyCart > p {
+    margin-top: 2vmax;
+    font-size: 2vmax;
+  }
+  .emptyCart > a {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    padding: 1vmax 3vmax;
+    margin-top: 2vmax;
+    cursor: pointer;
+    font: 400 1vmax;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .cartPage {
+    padding: 2vmax 5vmax;
+  }
+  
+  .cartHeader {
+    background-color: rgb(21, 21, 21);
+    width: 92%;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 0.5fr;
+    font: 300 0.7vmax;
+    margin-bottom: 20px;
+  }
+  .cartHeader > p {
+    margin: 10px;
+    padding-left: 70px;
+    padding-right: 10px;
+  }
+  .cartHeader > p:last-child {
+    text-align: end;
+  }
+  
+  .cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 0.5fr;
+  }
+  
+  .cartInput {
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+  }
+  
+  /* .cartInput > button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+  }
+  .cartInput > button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  
+  .cartInput > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 1vmax;
+    text-align: center;
+    outline: none;
+    font: 400 0.8vmax;
+    color: rgba(0, 0, 0, 0.74);
+  } */
+  
+  .cartSubtotal {
+    display: flex;
+    padding: 0.5vmax;
+    height: 8vmax;
+    align-items: center;
+    box-sizing: border-box;
+    font: 300 1vmax;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.753);
+  }
+.removeItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .quantity-2{
+    margin-top: 1.8vmax;
+    padding: 10px;
+  }
+  .quantity-desc-2{
+    border: 1px solid gray;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+  }
+  .quantity-desc-2 span{
+    font-size: 13px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .quantity-desc-2 .minus-2{
+    /* border-right: 1px solid gray; */
+    color: #f02d34;
+  }
+  .quantity-desc-2 .num-2{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    font-size: 20px;
+    width: 45px;
+    text-align: center;
+  }
+  .quantity-desc-2 .plus-2{
+    color: rgb(49, 168, 49);
+  }
+  
+  .cartGrossProfit {
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr;
+  }
+  
+  .cartGrossProfitBox {
+    border-top: 3px solid rgb(21, 21, 21);
+    margin: 1vmax 4vmax;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    font: 300 1vmax;
+    display: flex;
+  }
+  .totalCost{
+    margin-left: 40%;
+  }
+  .checkOutBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .checkOutBtn > button {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border: none;
+    padding: 0.8vmax 4vmax;
+    width: 100%;
+    font: 300 0.8vmax;
+    font-size: 1.1rem;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cartPage {
+      padding: 0;
+      min-height: 60vh;
+    }
+  
+    .cartHeader {
+      width: 100%;
+      font: 300 1.7vmax;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartContainer {
+      width: 100%;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartInput {
+      height: 20vmax;
+    }
+  
+    .cartInput > button {
+      padding: 1.5vmax;
+    }
+  
+    .cartInput > input {
+      width: 2vmax;
+      padding: 1.5vmax;
+      font: 400 1.8vmax ;
+    }
+  
+    .cartSubtotal {
+      padding: 1.5vmax;
+      height: 20vmax;
+      font: 300 2vmax;
+    }
+  
+    .cartGrossProfit {
+      display: grid;
+      grid-template-columns: 0fr 2fr;
+    }
+  
+    .cartGrossProfitBox {
+      padding: 2vmax;
+      font: 300 2vmax;
+    }
+  
+    .checkOutBtn > button {
+      padding: 2vmax 4vmax;
+      width: 100%;
+      font: 300 2vmax;
+    }
+  }

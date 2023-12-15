@@ -1,0 +1,63 @@
+.orderSuccess {
+    margin: auto;
+    text-align: center;
+    padding: 8vmax;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .orderSuccess > svg {
+    margin: 2vmax;
+    font-size: 11vmax;
+    color: rgb(21, 21, 21);
+  }
+  .orderSuccess > p {
+    margin-top: 10px;
+    font-size: 1.1vmax;
+  }
+  .orderSuccess > div {
+    display: flex;
+
+  }
+  .orderSuccess > div > a {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    padding: 1vmax 4vmax;
+    cursor: pointer;
+    font: 500 1vmax ;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 2vmax;
+    border-radius: 3%;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+  .orderSuccess > div > a:hover{
+    transform:scale(1.1,1.1);
+    /* background-color: rgb(22, 22, 22); */
+  }
+  #order_btn{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderSuccess > a {
+      padding: 3vw 6vw;
+      font: 400 4vw "Roboto";
+      margin: 2vmax;
+    }
+  
+    .orderSuccess > svg {
+      font-size: 20vw;
+    }
+    .orderSuccess > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+  }

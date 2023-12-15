@@ -1,0 +1,140 @@
+.navbar-container{
+    padding: 27px 20px 30px 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(90 90 90 / 26%);
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    padding-left: 20px;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 40px;
+    /* position: absolute;
+    right: 10px ; */
+    list-style: none;
+}
+
+.navbar-list > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 10px 14px;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-size: 13.7px;
+}
+
+.navbar-list > li >a:hover{
+    background-color: black;
+    color: white;
+}
+
+.navbar-list-2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 10px;
+    position: absolute;
+    right: 10px ;
+    list-style: none;
+}
+
+.navbar-list-2 > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 10px 14px;
+    margin-right: 10px;
+}
+
+#userIcon{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px 0px 20px;
+    width: 40px;
+}
+
+.searchBox{
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   position: absolute;
+   right: 0px;
+   width: 55%;
+   
+}
+
+.searchBox > input[type="text"] {
+    box-shadow: 0 0 5px rgba(99, 99, 99, 0.274);
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 0.5vmax 2vmax;
+    width: 45%;
+    outline: none;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-sizing: border-box;
+    /* height: 8%; */
+  }
+
+
+.searchIcon{
+    background-color: rgb(41, 41, 41);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border: none;
+    padding:0.6vmax 0.7vmax;
+    cursor: pointer;
+    color: white;
+  }
+
+.searchIcon:hover{
+    background-color: rgb(21, 21, 21);
+}
+
+.cart-icon{
+    font-size: 25px;
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    
+    background-color: transparent;
+}
+
+.cart-item-qty{
+    position: absolute;
+    top:-10px;
+    right: 8px;
+    padding-top: 1px;
+    font-size: 13px;
+    color: #eee;
+    background-color: rgb(21, 21, 21);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 500;
+  
+  }

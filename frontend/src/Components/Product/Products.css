@@ -1,0 +1,73 @@
+.productsHeading {
+    margin: 1vmax auto;
+    width: 20vw;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.171); */
+    padding: 1.5vmax;
+    color: black;
+    text-align: center;
+  }
+
+  .products-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 3vmax 0 0;
+    border: 1px solid rgba(19, 19, 19, 0.171);
+    min-height: 40vh;
+  }
+
+  .filtersContainer{
+    position: relative;
+    left: 1.5rem;
+    padding: 10px 20px 10px 20px ;
+    width: 20%;
+    border-right: 1px solid rgba(85, 85, 85, 0.171);
+  }
+
+  .filtersContainer > h2{
+    margin: 10px 0px 20px 0px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  }
+
+  .categoryBox {
+
+    margin: 1vmax 0;
+    padding: 0%;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.171); */
+  }
+  
+  .category-link {
+    list-style: none;
+    color: rgba(2, 2, 2, 0.61);
+    margin: 0.5vmax;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .category-link:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 580;
+  }
+  
+.active{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+  .products {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1vmax 2vmax;
+    justify-content: center;
+    min-height: 30vh;
+  }
+
+  .paginationBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+  }

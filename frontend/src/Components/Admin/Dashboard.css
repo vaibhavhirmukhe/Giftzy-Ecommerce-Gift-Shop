@@ -1,0 +1,112 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+    min-height: 100vh;
+    max-height: 100%;
+  }
+  
+  .dashboardContainer {
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    background-color: #e0e0e2;
+    padding: 0.5rem 0;
+  }
+  
+  .dashboardContainer > h1 {
+    color: rgb(21, 21, 21);
+    text-align: center;
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  
+  .dashboardSummary > div {
+    display: flex;
+    background-color: #e0e0e2;
+    justify-content: center;
+  }
+
+  .dashboardSummaryBox2 > a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    padding: 2rem;
+    width: 15vmax;
+    height: 9vmax;
+    margin: 2vmax 3vmax;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgb(179, 178, 178);
+    transform: scale(1, 1);
+    transition: all 1s ease;
+  }
+  .dashboardSummaryBox2 > a:hover{
+    
+    transform:scale(1.1,1.1);
+  }
+   
+
+  .dashboardSummaryBox2 > a > div > span{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  
+  .dashboardSummaryBox2 > a:last-child {
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+  }
+  
+  .dashboardSummary2{
+    margin: 0.8vmax 2vmax ;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .dashboardSummary2Box1{
+    width: 95%;
+    height: 47vh;
+  }
+  .dashboardSummary2Box2{
+    width: 100%;
+    height: 47vh;
+  }
+  .dashboardSummary2Box1Heading{
+    display: flex;
+    justify-content: space-between;
+  }
+  .dashboardSummary2Box1Heading > a{
+    text-decoration: none;
+    margin-bottom: 6px;
+    padding: 7px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+  
+    .dashboardContainer {
+      border-left: none;
+    }
+  
+    .dashboardSummary > div > p {
+      margin: 0;
+    }
+  
+    .dashboardSummaryBox2 > a {
+      padding: 0.5rem;
+      margin: 1rem;
+      font: 300 0.9rem "Roboto";
+    }
+  }

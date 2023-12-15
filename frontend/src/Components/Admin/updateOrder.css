@@ -1,0 +1,60 @@
+.updateOrderContainer{
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-left: 0px;
+}
+
+.updateOrderBox{
+    background-color: #e0e0e2;
+    padding: 2vmax;
+    
+}
+.updateOrderForm {
+    margin: 5vmax 0;
+    padding: 4vmax;
+    position: fixed;
+    top: 15%;
+    left: 71%;
+    background-color: white;
+  }
+  
+  .updateOrderForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .updateOrderForm > div > select {
+    padding: 1vmax 4vmax;
+    margin: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    outline: none;
+  }
+  .orderSummaryTotal > span{
+    color: #575757;
+    font-weight: 600;
+  }
+  .updateOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+
+  .confirmshippingArea{
+    height: 100%;
+  }
+
+  .orderDetailsBox > div{
+    display: flex;
+    padding: 10px;
+  }
+  
+  .orderDetailsBox > div > span{
+    margin-left: 10px;
+  }
+  
