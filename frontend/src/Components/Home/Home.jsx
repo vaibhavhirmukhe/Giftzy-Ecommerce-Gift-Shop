@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react'
 import "./Home.css"
-import homeImage from '../../img/app_3.png';
-import rose_img from '../../img/rose_img.png';
-import flower_img from '../../img/flower_img.png';
 import ProductCard from './ProductCard';
 import { clearErrors, getProduct } from '../../actions/productAction';
 import {useSelector, useDispatch} from "react-redux";
@@ -39,7 +36,7 @@ const Home = () => {
                     <div id="box_container">
                         <div className="box">
                             <span>
-                                <img src={rose_img} alt="rose_img" />
+                                <img src="https://res.cloudinary.com/dbjuf2psg/image/upload/v1702737887/samples/rose_img_bdapxd.png" alt="rose_img" />
                                 <div>
                                     <h4>Premium Roses</h4>
                                     <p>₹400</p>
@@ -49,7 +46,7 @@ const Home = () => {
                         </div>
                         <div className="box">
                             <span>
-                                <img src={flower_img} alt="flower_img" />
+                                <img src="https://res.cloudinary.com/dbjuf2psg/image/upload/v1702737872/samples/flower_img_bkzfe6.png" alt="flower_img" />
                                 <div>
                                     <h4>Premium Bouquet</h4>
                                     <p>₹300</p>
@@ -61,7 +58,7 @@ const Home = () => {
                 </section>
 
                 <section className='second_section'>
-                    <img className="home_img" src={homeImage} alt="Home Banner" srcset="" />
+                    <img className="home_img" src="https://res.cloudinary.com/dbjuf2psg/image/upload/v1702737709/samples/app_3_vw1io0.png" alt="Home Banner" srcset="" />
                 </section>
 
             </div>
