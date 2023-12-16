@@ -4,7 +4,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import Facebook from "@mui/icons-material/Facebook";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import GoogleIcon from '@mui/icons-material/Google';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -32,9 +31,6 @@ const Footer = () => {
               </Link>
               <Link to="/" >
                 <Facebook style={{color:"white" , margin:"2px 7px"}}/>
-              </Link>
-              <Link to="/" >
-                <GoogleIcon style={{color:"white" , margin:"2px 7px"}}/>
               </Link>
               <Link to="/" >
                 <LinkedInIcon style={{color:"white" , margin:"2px 7px"}}/>

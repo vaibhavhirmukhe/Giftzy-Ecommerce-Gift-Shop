@@ -122,7 +122,7 @@ export default function SimpleSlider() {
                     <b
                       className={product.Stock < 1 ? "redColor" : "greenColor"}
                     >
-                      {product.Stock < 1 ? " OutOfStock" : " InStock"}
+                      {product.Stock < 1 ? " Out-Of-Stock" : " InStock"}
                     </b>
                   </p>
                 </div>

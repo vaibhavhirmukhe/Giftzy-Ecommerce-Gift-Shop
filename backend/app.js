@@ -5,7 +5,6 @@ const bodyParser = require("body-parser")
 const fileUpload = require("express-fileupload")
 const dotenv = require("dotenv")
 const errorMiddlerware = require("./middleware/error");
-
 //config
 dotenv.config({path:"backend/config/config.env"})
 
@@ -24,6 +23,9 @@ app.use("/api/v1", product);
 app.use("/api/v1", user);
 app.use("/api/v1", order);
 app.use("/api/v1", payment);
+
+
+
 
 // middleware for Errors
 app.use(errorMiddlerware);
