@@ -10,11 +10,14 @@ const cors = require("cors");
 //config
 dotenv.config({path:"backend/config/config.env"})
 
-app.use(cors());
+app.use(cors({credentials:true, origin:true, exposedHeaders: ["set-cookie"]}));
 app.use(express.json());
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
+
+app.set("trust proxy"); // trust first proxy
+
 
 //Routes imports
 const product = require("./routes/productRoute")
